@@ -15,11 +15,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class MainSplit {
+public class FormattingIP {
 	
 	Pcap pcap;
 	
-	public MainSplit(String pcapFile, String fnameipv4, String fnameipv6) throws FileNotFoundException, IOException {	
+	public FormattingIP(String pcapFile, String fnameipv4, String fnameipv6) throws FileNotFoundException, IOException {	
 		this.pcap = Pcap.openStream(pcapFile);
 		parsing();
 		toTextFile(fnameipv4,fnameipv6);
@@ -181,7 +181,7 @@ public class MainSplit {
 		      System.exit(-1);
 		    }
 		else {
-			MainSplit m = new MainSplit(args[0],args[1],args[2]);
+			FormattingIP m = new FormattingIP(args[0],args[1],args[2]);
 		}
 	}
 }
