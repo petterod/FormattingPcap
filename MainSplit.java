@@ -153,10 +153,9 @@ public class MainSplit {
 		try ( BufferedWriter bw1 = new BufferedWriter (new FileWriter (FNAMEIPv4)) ) 
 		{			
 			for (PktIPv4 line : listeIPv4) {
-				//System.out.println(line);
 				bw1.write(line + "\n");
 			}
-			
+			System.out.println("Created file " + FNAMEIPv4);
 			bw1.close ();
 			
 		} catch (IOException e) {
@@ -166,10 +165,9 @@ public class MainSplit {
 		try(BufferedWriter bw2 = new BufferedWriter (new FileWriter (FNAMEIPv6)) )
 		{
 			for(PktIPv6 line : listeIPv6) {
-				//System.out.println(line);
 				bw2.write(line + "\n");
 			}
-			
+			System.out.println("Created file " + FNAMEIPv6);
 			bw2.close();
 		} catch (IOException e) {
 			e.printStackTrace();

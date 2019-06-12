@@ -286,15 +286,5 @@ public class PktIPv6 {
 	    	    	    + getChecksum() + "\t"
 	    	    	    + getUrgentPointer() + "\t"
 	    	    	    + getLength() + "\t";
-	    				//+ "\n";
 	    }
-		
-		
-		
-		public static void main(String[] args) {
-			PktIPv6 p = new PktIPv6();
-			p.setVersion(4);
-			System.out.println(p);
-		}
-
 }

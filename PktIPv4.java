@@ -356,16 +356,5 @@ public class PktIPv4 {
 	    	    	    + getChecksum() + "\t"
 	    	    	    + getUrgentPointer() + "\t"
 	    	    	    + getLength() + "\t";
-	    				//+ "\n";
 	    }
-		
-		
-		
-		public static void main(String[] args) {
-			PktIPv4 p = new PktIPv4();
-			p.setVersion(4);
-			p.setInternetHeaderLength(5);
-			System.out.println(p);
-		}
-
 }
